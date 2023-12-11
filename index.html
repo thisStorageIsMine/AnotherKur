@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Move - сайт для пешеходов</title>
+    <link rel="stylesheet" href="Стили.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+
+
+</head>
+<body>
+    <header>
+        <ul>
+            <li>Главная</li>
+            <li>Маршруты</li>
+            <li>Карты</li>
+            <li>О проекте</li>
+        </ul>
+    </header>
+
+
+    <div class="cool-photo">
+        <div class="cool-photo_content wrapper">
+            <h3 class="font">Выберите маршрут путешествия</h3>
+            <p class="font">Сервис для поиска самых крутых и интересных маршрутов</p>
+            <button class="font">Поиск маршрутов на карте</button>
+        </div>
+    </div>
+
+
+    <div class="category-section">
+
+        <div class="wrapper category-section_content">
+            <h4 class="font">Для кого этот проект?</h4>
+            <div class="category-section_container wrapper">
+                <div class="categoty-item">
+                    <img src="imgs/photo1702319952.jpeg" >
+                    <div>
+                        <h6>Новичёк в туризме?</h6>
+                        <p>Изучи основы на сайте и сходи в свой первый поход.
+                            Маркировка троп не даст заблудиться, а сайт поможет выбрать маршрут подходящей сложности</p>
+                    </div>
+                </div>
+                <div class="categoty-item">
+                    <img src="imgs/Без имени.jpg" >
+                    <div>
+                        <h6>Опытный путешественник?</h6>
+                        <p>Мы можем предложить тебя маршруты любой сложности!</p>
+                    </div>
+                </div>
+                <div class="categoty-item">
+                    <img src="imgs/photo1702320025.jpeg" >
+                    <div>
+                        <h6>Идешь с семьёй или группой?</h6>
+                        <p>Описание маршрута поможет оценить силы и сделает поход безопаснее, а маркировка не позволит сбиться с пути.</p>
+                    </div>
+                </div>
+                <div class="categoty-item">
+                    <img src="imgs/диван.jpg" >
+                    <div>
+                        <h6>Не хочешь далеко уезжать  от дома?</h6>
+                        <p>Здесь ты найдёшь маршрут почти в любой точке мира.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Слайдер -->
+    <div class="second-section swiper">
+        <div class="swiper-wrapper second-section_content">
+            
+
+            <div class="swiper-slide slide-1 ">
+                <div class="second-section_card wrapper">
+                    <div class="card_comment-card">
+                        <img src="imgs/connor-wilkins-2crxTr4jCkc-unsplash.jpg">
+                        <div class="name">Нина Хамид</div>
+                        <div class="date">Июнь, 12.2022</div>
+                        <div class="rating"> 
+                            <div class="active">★</div>
+                            <div class="active">★</div>
+                            <div class="active">★</div>
+                            <div class="active">★</div>
+                            <div class="active">★</div>
+                        </div>
+                        <p>Всё было прекрасно. Всем всё понравилось. Вернёмся ещё!</p>
+                    </div>
+                    <img src="imgs/Rectangle 8.png" alt="">
+                </div>
+            </div>
+
+            <div class="swiper-slide slide-2 ">
+                <div class="second-section_card wrapper">
+                    <div class="card_comment-card">
+                        <img src="imgs/photo1702324290.jpeg">
+                        <div class="name">Аушев Ибрагим</div>
+                        <div class="date">Февраль, 03.2021</div>
+                        <div class="rating"> 
+                            <div class="active">★</div>
+                            <div class="active">★</div>
+                            <div class="active">★</div>
+                            <div class="active">★</div>
+                            <div class="">★</div>
+                        </div>
+                        <p>Никогда не видел настолько замечательных пейзажей!</p>
+                    </div>
+                    <img src="imgs/photo1702323870.jpeg" alt="">
+                </div>
+            </div>
+
+
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+
+
+    <footer>
+        <div class="wrapper footer_content">
+            <h6>Мои контакты</h6>
+            <div class="underline"></div>
+            <div class="footer_icons">
+                <div>   
+                    <img class="vk"src="imgs/vk-xxl.png" alt="">
+                    <p>https://vk.com/id771925579</p>
+                </div>
+                <div>
+                    <img src="imgs/mail.png" alt="">
+                    <p>217096@edu.fa.ru</p>
+                </div>
+                <div>
+                    <img src="imgs/phone.png" alt="">
+                    <p>8-800-55-53535</p>
+                </div>
+            </div>
+            <h6>Оставьте мне сообщение</h6>
+            <!-- Чтобы страница не перезагружалась при нажатии на кнопку пишем return false -->
+            <form action="" onsubmit="return false"> 
+                <div class="inputs">
+                    <input type="text" placeholder="Имя">
+                    <input type="email" autocomplete="email" placeholder="email">
+                    <textarea name="" id="" placeholder="Сообщение"></textarea>
+                </div>
+                <input type="submit" value="Отправить">
+            </form>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="slider.js"></script>
+    <script src="Скрипты.js"></script>
+</body>
+</html>
