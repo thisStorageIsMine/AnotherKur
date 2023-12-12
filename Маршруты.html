@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Маршруты</title>
+    <link rel="stylesheet" href="Стили.css">
+    <link rel="icon" href="imgs/travel-and-tourism.png">
+    <link rel="stylesheet" href="бургер.css">
+    <link rel="stylesheet" href="Маршруты.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="ul">
+            <a href="index.html" class="li">Главная</a>
+            <a href="Маршруты.html" class="li">Маршруты</a>
+            <a href="сотрудничество.html" class="li">Сотрудничество</a>
+            <a href="О проекте.html" class="li">О проекте</a>
+        </div>
+    </header>
+    <div class="burger-icon">
+        <span></span>
+    </div>
+    <div class="burger-content">
+        <div>
+            <a href="index.html" class="li">Главная</a>
+            <a href="" class="li">Маршруты</a>
+            <a href="сотрудничество.html" class="li">Сотрудничество</a>
+            <a href="О проекте.html" class="li">О проекте</a>
+        </div>
+    </div>
+    
+    <div class="path-section">
+        <div class="path-section_header wrapper">
+            <div class="filters" >
+                <p class="path-filter active" data-filter="all">
+                    Все
+                </p>
+                <p data-filter="popular" class="path-filter">
+                    Популярные
+                </p>
+                <p data-filter="new" class="path-filter">
+                    Новые
+                </p>
+            </div>
+            
+            <p class="path-amount">
+                Кол-во маршрутов: 3
+            </p>
+        </div>
+        
+        <div class="path-storage wrapper">
+        
+            <div class="path-card" onclick="relocate('//ttrails.ru/routes/coburger-hutte')" data-cat="new">
+                <img src="imgs/path-alpine.jpg" alt="" class="path-img">
+                <div class="path-info">
+                    <h6 class="zone">Тироль</h6>
+                    <h6 class="title">Трекинг в Альпах</h6>
+                    
+                    <div class="timer-forward">
+                        <div class="timer">
+                            <img src="imgs/stopwatch.png" alt="" style="max-width: 24px;">
+                            <p>06:24:42</p>
+                        </div>
+                        <div class="forward">
+                            <img src="imgs/right-arrow.png" style="max-width: 24px;"  alt="">
+                            <p>12,8 км</p>
+                        </div>
+                    </div>
+                    <div class="timer-forward">
+                        <div class="timer">
+                            <img src="imgs/up-arrow.png" alt="" style="max-width: 24px;">
+                            <p>1933 м </p>
+                        </div>
+                        <div class="forward">
+                            <img src="imgs/down-arrow.png" style="max-width: 24px;"  alt="">
+                            <p>943 м</p>
+                        </div>
+                    </div>
+                    
+                    <div class="difficulty">
+                        Сложно
+                    </div>
+                </div>
+            </div>
+            
+            <div class="path-card" onclick="relocate('//ttrails.ru/routes/treking-v-prielbruse')" data-cat="popular">
+                <img src="imgs/path-cab.jpg" alt="" class="path-img">
+                <div class="path-info">
+                    <h6 class="zone">Кабардино-Балкария</h6>
+                    <h6 class="title">Трекинг в Преэльбрусье</h6>
+                    
+                    <div class="timer-forward">
+                        <div class="timer">
+                            <img src="imgs/stopwatch.png" alt="" style="max-width: 24px;">
+                            <p>42:21:54</p>
+                        </div>
+                        <div class="forward">
+                            <img src="imgs/right-arrow.png" style="max-width: 24px;"  alt="">
+                            <p>13,0 км</p>
+                        </div>
+                    </div>
+                    <div class="timer-forward">
+                        <div class="timer">
+                            <img src="imgs/up-arrow.png" alt="" style="max-width: 24px;">
+                            <p>1341 м </p>
+                        </div>
+                        <div class="forward">
+                            <img src="imgs/down-arrow.png" style="max-width: 24px;"  alt="">
+                            <p>914 м</p>
+                        </div>
+                    </div>
+                    
+                    <div class="difficulty">
+                        Сложно
+                    </div>
+                </div>
+            </div>
+            
+            <div class="path-card" onclick="relocate('//ttrails.ru/routes/trek-kanony-uzundzha-i-bolshoy')" data-cat="popular">
+                <img src="imgs/path-cr.jpg" alt="" class="path-img">
+                <div class="path-info">
+                    <h6 class="zone">Крымский полуостров</h6>
+                    <h6 class="title">Трек каньоны</h6>
+                    
+                    <div class="timer-forward">
+                        <div class="timer">
+                            <img src="imgs/stopwatch.png" alt="" style="max-width: 24px;">
+                            <p>20:46:38</p>
+                        </div>
+                        <div class="forward">
+                            <img src="imgs/right-arrow.png" style="max-width: 24px;"  alt="">
+                            <p>41,6 км</p>
+                        </div>
+                    </div>
+                    <div class="timer-forward">
+                        <div class="timer">
+                            <img src="imgs/up-arrow.png" alt="" style="max-width: 24px;">
+                            <p>3976 м </p>
+                        </div>
+                        <div class="forward">
+                            <img src="imgs/down-arrow.png" style="max-width: 24px;"  alt="">
+                            <p>3089 м</p>
+                        </div>
+                    </div>
+                    
+                    <div class="difficulty" style="background-color: orange;">
+                        Средне
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+    
+    
+    
+    <footer class=" mt">
+        <div class="wrapper footer_content">
+            <h6>Мои контакты</h6>
+            <div class="underline"></div>
+            <div class="footer_icons">
+
+                <div>
+                    <img src="imgs/mail.png" alt="">
+                    <p>217096@edu.fa.ru</p>
+                </div>
+                <div>
+                    <img src="imgs/phone.png" alt="">
+                    <p>8-800-55-53535</p>
+                </div>
+            </div>
+            <h6>Оставьте мне сообщение</h6>
+            <!-- Чтобы страница не перезагружалась при нажатии на кнопку пишем return false -->
+            <form action="" onsubmit="return false"> 
+                <div class="inputs">
+                    <input type="text" placeholder="Имя">
+                    <input type="email" autocomplete="email" placeholder="email">
+                    <textarea name="" id="" placeholder="Сообщение"></textarea>
+                </div>
+                <input type="submit" value="Отправить">
+            </form>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="slider.js"></script>
+    <script src="Скрипты.js"></script>
+    <script src="burger.js"></script>
+</body>
+</html>
