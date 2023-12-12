@@ -55,6 +55,7 @@ header > .cool-photo {
 
 header > .ul {
     display: flex;
+    margin-right: 150px;
     max-width: 40%;
     justify-content: space-between;
     align-items: center;
