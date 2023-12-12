@@ -45,7 +45,7 @@ header {
     z-index: 5;
 }
 
-header > ul {
+header > .cool-photo {
     display: flex;
     justify-content: space-between;
     max-width: 40%;
@@ -53,15 +53,27 @@ header > ul {
     padding: 1rem 3rem;
 }
 
-header > ul > li {
+header > .ul {
+    display: flex;
+    max-width: 40%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    margin-left: auto;
+    gap: 25px;
+}
+
+header > .ul > .li {
     list-style-type: none;
     color: var(--white);
     position: relative;
     cursor: pointer;
-    font-size: 28px;
+    font-size: 26px;
+    text-decoration: none;
+    white-space: nowrap;
 }
 
-header > ul > li:hover {
+header > .ul > .li:hover {
     text-decoration: underline;
 }
 
@@ -421,7 +433,7 @@ form > input[type="submit"] {
 @media screen and (max-width:1500px) {
 
 
-    header > ul {
+    header > .ul {
         max-width: unset;
     }
 }

@@ -79,18 +79,16 @@
     gap: 30px;
 }
 
-.burger-content > div > p {
+.burger-content > div > a {
     padding: 10px 20px;
     cursor: pointer;
     color: #fff;
+    text-decoration: none;
 }
 
-.burger-content > div > p:not(:last-child) {
-    border-bottom: 1px solid black;
-} 
 
-.burger-content > div > p:hover{
-    color: #000;
+.burger-content > div > a:hover{
+    text-decoration: underline;
 }
 
 
