@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Стили.css">
+    <link rel="stylesheet" href="бургер.css">
+    <link rel="stylesheet" href="сотрудничество.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+</head>
+<body>
+    <header>
+        <ul>
+            <li>Главная</li>
+            <li>Маршруты</li>
+            <li>Карты</li>
+            <li>О проекте</li>
+        </ul>
+    </header>
+    <div class="burger-icon">
+        <span></span>
+    </div>
+    <div class="burger-content">
+        <div>
+            <p>Главная</p>
+            <p>Маршруты</p>
+            <p>Карты</p>
+            <p>О проекте</p>
+        </div>
+    </div>
+
+
+    <div class="section wrapper">
+        <div class="section_header">Сотрудничество, участие и помощь в проекте</div>
+
+        <div class="section_content">
+            <p>Проект создания маркированных троп России — некоммерческий. Мы делаем это для вас, для себя и для наших детей.
+                Люди часто думают, что такие проекты делаются государством или олигархами. Либо, на худой конец, бездельниками, которым нечего делать, кроме как ходить в походы с ведрами краски. Наша команда — всего десять человек, и наши время и ресурсы ограничены. Успех же проекта определяют люди, которые готовы оказать практическую помощь. Мы рады любому сотрудничеству, начиная от хорошей фотографии, поста или лайка в соцсети.</p>
+            <img src="imgs/sebastian-unrau-sp-p7uuT0tw-unsplash.jpg" alt="">
+        </div>
+
+        <div class="section_subheader">
+            Как можно помочь в развитии проекта?
+        </div>
+
+        <div class="section_footer">
+            <h6>Создайте маршрут</h6>
+            <p>Вы опытный турист, туристический клуб или ЦДЮТ? Знаете маршрут, который можно промаркировать, или готовы разработать новый? Отправте заявку и получите пакет с подробными инструкциями по созданию маршрута.</p>
+        </div>
+
+    </div>
+
+    <footer class=" mt">
+        <div class="wrapper footer_content">
+            <h6>Мои контакты</h6>
+            <div class="underline"></div>
+            <div class="footer_icons">
+
+                <div>
+                    <img src="imgs/mail.png" alt="">
+                    <p>217096@edu.fa.ru</p>
+                </div>
+                <div>
+                    <img src="imgs/phone.png" alt="">
+                    <p>8-800-55-53535</p>
+                </div>
+            </div>
+            <h6>Оставьте мне сообщение</h6>
+            <!-- Чтобы страница не перезагружалась при нажатии на кнопку пишем return false -->
+            <form action="" onsubmit="return false"> 
+                <div class="inputs">
+                    <input type="text" placeholder="Имя">
+                    <input type="email" autocomplete="email" placeholder="email">
+                    <textarea name="" id="" placeholder="Сообщение"></textarea>
+                </div>
+                <input type="submit" value="Отправить">
+            </form>
+        </div>
+    </footer>
+
+    <script src="burger.js"></script>
+</body>
+</html>
