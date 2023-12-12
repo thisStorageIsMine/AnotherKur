@@ -12,12 +12,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: 1px solid green;
 }
 
 .wrapper{
     margin: 0 auto;
     width: 100%;
     max-width: 1400px;
+    padding: 20px;
 }
 
 .font {
@@ -405,3 +407,67 @@ form > input[type="submit"] {
     height: 24px;
 }
 /* конец футера*/
+
+
+.category-media {
+    display: none;
+}
+
+
+@media screen and (max-width:1500px) {
+
+
+    header > ul {
+        max-width: unset;
+    }
+}
+
+
+@media screen and (max-width:1300px) {
+    .swiper-button-prev,
+    .swiper-button-next {
+        --swiper-navigation-sides-offset: 10px;
+    }
+
+    header {
+        display: none;
+    }
+
+    .category-section_content > div {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .category-section {
+        background-size: 400%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    #pain {
+        max-width: 173px;
+    }
+    .card_comment-card ~ img {
+        display: none;
+    }
+
+    .card_comment-card {
+        border-radius: 45px;
+    }
+
+    .category-section {
+        background-size: 1000%;
+    }
+
+    .categoty-item {
+        flex-direction: column;
+    }
+
+    .card_comment-card {
+        height: 600px;
+    }
+}
+
+
+

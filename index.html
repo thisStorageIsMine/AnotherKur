@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Move - сайт для пешеходов</title>
     <link rel="stylesheet" href="Стили.css">
+    <link rel="stylesheet" href="бургер.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -23,6 +24,18 @@
         </ul>
     </header>
 
+    <div class="burger-icon">
+        <span></span>
+    </div>
+    <div class="burger-content">
+        <div>
+            <p>Главная</p>
+            <p>Маршруты</p>
+            <p>Карты</p>
+            <p>О проекте</p>
+        </div>
+    </div>
+
 
     <div class="cool-photo">
         <div class="cool-photo_content wrapper">
@@ -35,7 +48,7 @@
 
     <div class="category-section">
 
-        <div class="wrapper category-section_content">
+        <div class="wrapper category-section_content ">
             <h4 class="font">Для кого этот проект?</h4>
             <div class="category-section_container wrapper">
                 <div class="categoty-item">
@@ -46,13 +59,7 @@
                             Маркировка троп не даст заблудиться, а сайт поможет выбрать маршрут подходящей сложности</p>
                     </div>
                 </div>
-                <div class="categoty-item">
-                    <img src="imgs/Без имени.jpg" >
-                    <div>
-                        <h6>Опытный путешественник?</h6>
-                        <p>Мы можем предложить тебя маршруты любой сложности!</p>
-                    </div>
-                </div>
+                
                 <div class="categoty-item">
                     <img src="imgs/photo1702320025.jpeg" >
                     <div>
@@ -118,8 +125,8 @@
 
 
         </div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev com-prev"></div>
+        <div class="swiper-button-next com-next"></div>
     </div>
 
 
@@ -154,5 +161,6 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="slider.js"></script>
     <script src="Скрипты.js"></script>
+    <script src="burger.js"></script>
 </body>
 </html>

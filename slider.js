@@ -7,7 +7,8 @@ const swiper = new Swiper('.second-section', {
         delay: 5000,
       },
     navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.com-next',
+    prevEl: '.com-prev',
     },
   });
+
